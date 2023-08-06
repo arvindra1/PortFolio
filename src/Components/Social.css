@@ -1,0 +1,65 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+/* Variables */
+:root {
+  --timing: 265ms;
+  --iconColor: #00B5F5;
+  --accent: #002A8F;
+}
+
+body {
+  background-color: rgba(var(--iconColor), 0.05);
+}
+
+
+.social-icons {
+  padding: 0;
+  list-style: none;
+  margin: 1em;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin: 0.15em;
+  position: relative;
+  font-size: 1.2em;
+}
+
+.social-icons i {
+  color: #fff;
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  transition: all var(--timing) ease-out;
+}
+
+.social-icons a {
+  display: inline-block;
+}
+
+.social-icons a:before {
+  content: " ";
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: block;
+  background: linear-gradient(45deg, var(--iconColor), var(--accent));
+  transition: all var(--timing) ease-out;
+}
+
+.social-icons a:hover:before {
+  transform: scale(0);
+  transition: all var(--timing) ease-in;
+}
+
+.social-icons a:hover i {
+  transform: scale(2.2);
+  color: var(--iconColor);
+  background: -webkit-linear-gradient(45deg, var(--iconColor), var(--accent));
+   background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all var(--timing) ease-in;
+}
+#footer{
+  background: #000b3a;
+}

@@ -1,0 +1,190 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Reset and Global Styles */
+* {
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: 0.6s;
+      padding: 40px 100px;
+      z-index: 10000;
+    }
+    
+    header.sticky {
+      padding: 5px 100px;
+      background: #3c0202;
+      box-shadow: 0px 15px 10px -15px;
+    }
+    
+    header .logo {
+      position: relative;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+      font-size: 2em;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      transition: 0.6s;
+    }
+    
+    header ul {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    header ul li {
+      position: relative;
+      list-style: none;
+    }
+    
+    header ul li a {
+      position: relative;
+      margin: 0 15px;
+      text-decoration: none;
+      color: #fff;
+      letter-spacing: 2px;
+      font-weight: 500;
+      transition: 0.6s;
+    }
+    
+    header.sticky .logo,
+    header.sticky li a {
+      color: #ffffff;
+    }
+    
+    .menu-icon {
+      display: none;
+    }
+
+
+
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: 0.6s;
+      padding: 40px 100px;
+      z-index: 10000;
+    }
+    
+    header.sticky {
+      padding: 5px 100px;
+      background: #3c0202;
+      box-shadow: 0px 15px 10px -15px;
+    }
+    
+    header .logo {
+      position: relative;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+      font-size: 2em;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      transition: 0.6s;
+    }
+    
+    header ul {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    header ul li {
+      position: relative;
+      list-style: none;
+    }
+    
+    header ul li a {
+      position: relative;
+      margin: 0 15px;
+      text-decoration: none;
+      color: #fff;
+      letter-spacing: 2px;
+      font-weight: 500;
+      transition: 0.6s;
+    }
+    
+    header.sticky .logo,
+    header.sticky li a {
+      color: #ffffff;
+    }
+    
+    .menu-icon {
+      display: none;
+    }
+}
+/* Header Styles */
+
+
+/* Media Query for Max Width 600px (Smartphones and Small Tablets) */
+@media (max-width: 600px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+ header {
+    padding: 20px 30px; /* Adjust the padding for mobile header*/ 
+  }  
+
+  header.sticky {
+    position: fixed;
+    padding: 0px 20px;
+  }
+  .nav-elements {
+    position: absolute;
+    right: 0;
+    top: 48px;
+    background-color: #50462c;
+    width: 0px;
+    height: calc(100vh - 17px);
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+  }
+
+  .nav-elements.active {
+    width: 270px;
+  }
+
+  .nav-elements ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-elements ul li {
+    margin-right: unset;
+    margin-top: 22px;
+  }
+}

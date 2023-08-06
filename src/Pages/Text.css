@@ -1,0 +1,45 @@
+.textd{
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-size: 80px;
+font-weight: 900;
+margin: 0;
+color: rgb(0, 0, 0);
+}
+.textdb{
+  font-family: 'Bebas Neue', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-size: 60px;
+font-weight: 900;
+margin: 0;
+color: rgb(0, 0, 0);
+
+}
+/* #about{
+    background-color: #191919;
+    padding-bottom: 60px;
+    margin: 0;
+} */
+#portfolio{
+    margin-top: 0px;
+    /* background: #191919; */
+    padding: 60px 0;
+}
+* {
+    margin: -1;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  #about{
+    /* background: #191919; */
+    padding: 50px;
+  }
+  #home{
+    padding: 60px 0;
+  }
+  #services{
+    /* background: #101010; */
+    padding: 60px 0;
+  }

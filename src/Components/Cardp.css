@@ -1,0 +1,6 @@
+.cp:hover{
+    background-image: linear-gradient(to bottom right, red, rgb(163, 6, 6));
+    transform: scale(1);
+    transition: 0.5s ;
+    transform: translateY(10px);
+}
